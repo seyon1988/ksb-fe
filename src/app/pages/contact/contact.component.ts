@@ -110,19 +110,19 @@ import { LanguageService } from '../../services/language.service';
 
             <div class="pillars-grid">
               <div class="pillar-chip">
-                <i class="pi pi-building text-maroon me-2"></i>
+                <i class="pi pi-building text-maroon me-3"></i>
                 <span>Residential Building</span>
               </div>
               <div class="pillar-chip">
-                <i class="pi pi-home text-gold me-2"></i>
+                <i class="pi pi-home text-gold me-3"></i>
                 <span>Renovation & Upgrades</span>
               </div>
               <div class="pillar-chip">
-                <i class="pi pi-palette text-maroon me-2"></i>
+                <i class="pi pi-palette text-maroon me-3"></i>
                 <span>Interior & Exterior</span>
               </div>
               <div class="pillar-chip">
-                <i class="pi pi-check-square text-ember me-2"></i>
+                <i class="pi pi-check-square text-ember me-3"></i>
                 <span>Supervision & Care</span>
               </div>
             </div>
@@ -406,20 +406,25 @@ import { LanguageService } from '../../services/language.service';
     .pillars-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.75rem;
+      gap: 0.85rem;
       margin-top: 2.75rem !important;
       margin-bottom: 2.75rem !important;
     }
     .pillar-chip {
       background: var(--paper);
       border: 1px solid var(--border);
-      padding: 0.6rem 0.9rem;
-      border-radius: 10px;
-      font-size: 0.875rem;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--maroon-deep);
       display: flex;
       align-items: center;
+      gap: 0.85rem;
+    }
+    .pillar-chip i {
+      font-size: 1.25rem;
+      flex-shrink: 0;
     }
 
     /* Confidentiality Box */
@@ -465,6 +470,19 @@ import { LanguageService } from '../../services/language.service';
     @media (max-width: 680px) {
       .modern-contact-card, .modern-inquiry-card {
         padding: 1.5rem 1.25rem;
+      }
+      .pillars-grid {
+        gap: 0.85rem;
+      }
+      .pillar-chip {
+        padding: 0.85rem 1.1rem;
+        gap: 1rem;
+        font-size: 0.95rem;
+      }
+      .pillar-chip i {
+        font-size: 1.35rem;
+        margin-right: 0.85rem !important;
+        flex-shrink: 0;
       }
       .action-buttons-group {
         display: flex;
