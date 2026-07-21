@@ -3,6 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable, tap, catchError, of, map, BehaviorSubject } from 'rxjs';
 
+import { environment } from '../../environments/environment';
+
 export interface AdminDetails {
   id: number;
   admin_id: number;
@@ -44,10 +46,7 @@ export class AuthService {
   private router = inject(Router);
 
   private get API_URL(): string {
-    if (typeof window !== 'undefined' && window.location.port === '4200') {
-      return 'http://localhost:8000/api/auth';
-    }
-    return '/api/auth';
+    return `${environment.apiUrl}/auth`;
   }
   private ACCESS_TOKEN_KEY = 'ksb_access_token';
   private ACCESS_EXPIRES_KEY = 'ksb_access_token_expires_at';

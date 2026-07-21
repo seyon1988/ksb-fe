@@ -1,5 +1,6 @@
 import { Injectable, signal, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 export interface ThemeOption {
   id: string;
@@ -111,7 +112,7 @@ export class ThemeService {
   }
 
   loadThemeFromDb(): void {
-    this.http.get<{ theme_id: string }>('/api/settings/theme').subscribe({
+    this.http.get<{ theme_id: string }>(`${environment.apiUrl}/settings/theme`).subscribe({
       next: (res) => {
         if (res && res.theme_id && this.themes.some(t => t.id === res.theme_id)) {
           this.setTheme(res.theme_id, true);
@@ -156,7 +157,7 @@ export class ThemeService {
     if (save) {
       localStorage.setItem('ksb_active_theme', themeId);
       // Persist to backend SQLite Database & auto reload page after save
-      this.http.post('/api/settings/theme', { theme_id: themeId }).subscribe({
+      this.http.post(`${environment.apiUrl}/settings/theme`, { theme_id: themeId }).subscribe({
         next: () => {
           if (reload || previousTheme !== themeId) {
             window.location.reload();
