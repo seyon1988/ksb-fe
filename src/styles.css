@@ -2,18 +2,18 @@
 @import 'primeicons/primeicons.css';
 
 :root {
-  --ink: #241012;
-  --maroon: #D9531C;
-  --maroon-deep: #B83A0C;
-  --gold: #F2B705;
-  --gold-deep: #C99200;
+  --ink: #0F172A;
+  --maroon: #0077B6;
+  --maroon-deep: #003B73;
+  --gold: #00A8E8;
+  --gold-deep: #0284C7;
   --ember: #D9531C;
-  --paper: #FBF5E8;
-  --paper-line: rgba(122, 14, 19, 0.07);
+  --paper: #F8FAFC;
+  --paper-line: rgba(0, 119, 182, 0.08);
   --card: #FFFFFF;
-  --border: rgba(36, 16, 18, 0.13);
-  --ink-soft: rgba(36, 16, 18, 0.68);
-  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --border: rgba(0, 59, 115, 0.12);
+  --ink-soft: rgba(15, 23, 42, 0.68);
+  --font-display: 'Outfit', 'Segoe UI', sans-serif;
   --font-body: 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
