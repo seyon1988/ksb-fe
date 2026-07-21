@@ -413,17 +413,18 @@ import { LanguageService } from '../../services/language.service';
     .pillar-chip {
       background: var(--paper);
       border: 1px solid var(--border);
-      padding: 0.75rem 1rem;
+      padding: 0.85rem 1.25rem;
       border-radius: 12px;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 600;
       color: var(--maroon-deep);
       display: flex;
       align-items: center;
-      gap: 0.85rem;
+      gap: 1rem;
     }
     .pillar-chip i {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
+      margin-right: 0.85rem !important;
       flex-shrink: 0;
     }
 
