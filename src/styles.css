@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import 'primeicons/primeicons.css';
+
+:root {
+  --ink: #241012;
+  --maroon: #D9531C;
+  --maroon-deep: #B83A0C;
+  --gold: #F2B705;
+  --gold-deep: #C99200;
+  --ember: #D9531C;
+  --paper: #FBF5E8;
+  --paper-line: rgba(122, 14, 19, 0.07);
+  --card: #FFFFFF;
+  --border: rgba(36, 16, 18, 0.13);
+  --ink-soft: rgba(36, 16, 18, 0.68);
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-body: 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--maroon-deep);
+}
+
+/* ----------------------------------------------------
+   BUTTON STYLING (Inspired by index.html & Theme Palette)
+   ---------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+}
+
+/* Primary Button (Maroon) */
+.btn-primary, .p-button-primary {
+  background: var(--maroon) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px -6px rgba(122, 14, 19, 0.55) !important;
+  border: none !important;
+}
+.btn-primary:hover, .p-button-primary:hover {
+  background: var(--maroon-deep) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px -6px rgba(78, 7, 11, 0.7) !important;
+}
+
+/* Gold Action Button */
+.btn-gold, .p-button-warn {
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep)) !important;
+  color: var(--maroon-deep) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 14px rgba(242, 183, 5, 0.45) !important;
+  border: 1px solid var(--gold-deep) !important;
+}
+.btn-gold:hover, .p-button-warn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(242, 183, 5, 0.65) !important;
+}
+
+/* Secondary / Ghost Button */
+.btn-ghost, .p-button-secondary {
+  background: transparent !important;
+  border: 1.5px solid var(--maroon) !important;
+  color: var(--maroon) !important;
+}
+.btn-ghost:hover, .p-button-secondary:hover {
+  background: var(--maroon) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Danger Button (Ember) */
+.btn-danger, .p-button-danger {
+  background: rgba(217, 83, 28, 0.1) !important;
+  color: var(--ember) !important;
+  border: 1.5px solid rgba(217, 83, 28, 0.3) !important;
+}
+.btn-danger:hover, .p-button-danger:hover {
+  background: var(--ember) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Success Button */
+.btn-success, .p-button-success {
+  background: #25d366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3) !important;
+  border: none !important;
+}
+.btn-success:hover, .p-button-success:hover {
+  background: #1faf53 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* PrimeNG Button Standard Override */
+.p-button {
+  font-family: var(--font-body) !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  padding: 0.65rem 1.25rem !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.2s ease !important;
+}
+
+@media (max-width: 680px) {
+  .p-button {
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Form Inputs */
+.p-inputtext {
+  font-family: var(--font-body) !important;
+  background: #ffffff !important;
+  border: 1.5px solid var(--border) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  color: var(--ink) !important;
+  outline: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+.p-inputtext:focus {
+  border-color: var(--maroon) !important;
+  box-shadow: 0 0 0 3px rgba(122, 14, 19, 0.15) !important;
+}
+
+/* Tags & Badges */
+.p-tag {
+  font-family: var(--font-body) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0.3rem 0.75rem !important;
+  border-radius: 6px !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+}
+.p-tag-info { background: rgba(122, 14, 19, 0.08) !important; color: var(--maroon-deep) !important; border: 1px solid rgba(122, 14, 19, 0.2) !important; }
+.p-tag-warn { background: rgba(242, 183, 5, 0.2) !important; color: #8A6400 !important; border: 1px solid rgba(242, 183, 5, 0.4) !important; }
+.p-tag-success { background: rgba(16, 185, 129, 0.12) !important; color: #047857 !important; border: 1px solid rgba(16, 185, 129, 0.3) !important; }
+.p-tag-danger { background: rgba(217, 83, 28, 0.12) !important; color: var(--ember) !important; border: 1px solid rgba(217, 83, 28, 0.3) !important; }
+.p-tag-secondary { background: rgba(36, 16, 18, 0.06) !important; color: var(--ink-soft) !important; border: 1px solid var(--border) !important; }
+
+/* Messages */
+.p-message {
+  border-radius: 10px !important;
+  padding: 0.75rem 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.p-message-error { background: rgba(217, 83, 28, 0.1) !important; color: var(--ember) !important; border: 1px solid rgba(217, 83, 28, 0.3) !important; }
+.p-message-warn { background: rgba(242, 183, 5, 0.18) !important; color: #8A6400 !important; border: 1px solid rgba(242, 183, 5, 0.4) !important; }
+.p-message-info { background: rgba(122, 14, 19, 0.08) !important; color: var(--maroon-deep) !important; border: 1px solid rgba(122, 14, 19, 0.2) !important; }
+
+/* Dividers */
+.p-divider {
+  border-top: 1px solid var(--border) !important;
+  margin: 1.25rem 0 !important;
+}
+
+/* Custom Text Utility Classes */
+.text-maroon { color: var(--maroon) !important; }
+.text-maroon-deep { color: var(--maroon-deep) !important; }
+.text-gold { color: var(--gold-deep) !important; }
+.text-ember { color: var(--ember) !important; }
+.text-soft { color: var(--ink-soft) !important; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--maroon);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--maroon-deep);
+}
