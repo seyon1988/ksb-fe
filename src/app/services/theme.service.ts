@@ -22,8 +22,8 @@ export class ThemeService {
 
   themes: ThemeOption[] = [
     {
-      id: 'option-2',
-      badgeText: 'Option 2',
+      id: 'theme-1',
+      badgeText: 'Theme 1',
       name: 'Dark Terracotta Orange',
       maroon: '#D9531C',
       maroonDeep: '#B83A0C',
