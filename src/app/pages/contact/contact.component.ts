@@ -108,7 +108,7 @@ import { LanguageService } from '../../services/language.service';
               Our projects are managed with maximum care, structural precision, and transparency.
             </p>
 
-            <div class="pillars-grid mt-4">
+            <div class="pillars-grid">
               <div class="pillar-chip">
                 <i class="pi pi-building text-maroon me-2"></i>
                 <span>Residential Building</span>
@@ -128,7 +128,7 @@ import { LanguageService } from '../../services/language.service';
             </div>
 
             <!-- Modern Confidentiality Alert Box -->
-            <div class="confidentiality-box mt-4">
+            <div class="confidentiality-box">
               <div class="lock-icon-wrap">
                 <i class="pi pi-lock text-gold"></i>
               </div>
@@ -407,6 +407,8 @@ import { LanguageService } from '../../services/language.service';
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 0.75rem;
+      margin-top: 2.75rem !important;
+      margin-bottom: 2.75rem !important;
     }
     .pillar-chip {
       background: var(--paper);
@@ -426,7 +428,7 @@ import { LanguageService } from '../../services/language.service';
       border: 1.5px solid rgba(201, 146, 0, 0.4);
       border-radius: 14px;
       padding: 1.4rem 1.6rem;
-      margin-top: 2rem !important;
+      margin-top: 2.75rem !important;
       margin-bottom: 0.75rem;
       display: flex;
       gap: 1.15rem;
