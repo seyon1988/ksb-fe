@@ -478,6 +478,9 @@ export class AdminDashboardComponent implements OnInit, OnDestroy {
   private intervalId: any;
 
   ngOnInit(): void {
+    // Always fetch & apply current active theme settings from DB on admin panel entry
+    this.themeService.loadThemeFromDb();
+
     this.updateTime();
     this.intervalId = setInterval(() => this.updateTime(), 10000);
 

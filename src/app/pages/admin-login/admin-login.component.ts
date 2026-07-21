@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -192,9 +192,10 @@ import { LanguageService } from '../../services/language.service';
     }
   `]
 })
-export class AdminLoginComponent {
+export class AdminLoginComponent implements OnInit {
   authService = inject(AuthService);
   langService = inject(LanguageService);
+  themeService = inject(ThemeService);
   router = inject(Router);
   route = inject(ActivatedRoute);
 
@@ -202,6 +203,11 @@ export class AdminLoginComponent {
   password = '';
   loading = false;
   errorMessage = '';
+
+  ngOnInit(): void {
+    // Always fetch & apply active theme settings from DB on admin login load
+    this.themeService.loadThemeFromDb();
+  }
 
   onLogin(): void {
     if (!this.username || !this.password) return;
