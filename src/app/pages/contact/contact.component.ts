@@ -23,52 +23,7 @@ import { LanguageService } from '../../services/language.service';
 
       <div class="container contact-content">
         <div class="contact-grid">
-          <!-- Modern Business Inquiry & Confidentiality Card (Row 1) -->
-          <div class="modern-inquiry-card">
-            <div class="inquiry-header">
-              <div class="header-icon"><i class="pi pi-shield text-maroon"></i></div>
-              <div>
-                <h2>Direct Customer Inquiries</h2>
-              </div>
-            </div>
-
-            <p class="inquiry-lead-text mt-3">
-              We provide residential construction, renovation, interior/exterior work, and project supervision.
-              Our projects are managed with maximum care, structural precision, and transparency.
-            </p>
-
-            <div class="pillars-grid mt-4">
-              <div class="pillar-chip">
-                <i class="pi pi-building text-maroon me-2"></i>
-                <span>Residential Building</span>
-              </div>
-              <div class="pillar-chip">
-                <i class="pi pi-home text-gold me-2"></i>
-                <span>Renovation & Upgrades</span>
-              </div>
-              <div class="pillar-chip">
-                <i class="pi pi-palette text-maroon me-2"></i>
-                <span>Interior & Exterior</span>
-              </div>
-              <div class="pillar-chip">
-                <i class="pi pi-check-square text-ember me-2"></i>
-                <span>Supervision & Care</span>
-              </div>
-            </div>
-
-            <!-- Modern Confidentiality Alert Box -->
-            <div class="confidentiality-box mt-4">
-              <div class="lock-icon-wrap">
-                <i class="pi pi-lock text-gold"></i>
-              </div>
-              <div class="confidentiality-content">
-                <strong>Client Confidentiality Policy</strong>
-                <p>{{ langService.translate('privacyNotice') }}</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modern Executive Direct Contact Card (Row 2) -->
+          <!-- Modern Executive Direct Contact Card (Card 1) -->
           <div class="modern-contact-card">
             <div class="card-brand-bar">
               <div class="brand-title-group">
@@ -136,6 +91,51 @@ import { LanguageService } from '../../services/language.service';
                   size="large">
                 </p-button>
               </a>
+            </div>
+          </div>
+
+          <!-- Modern Business Inquiry & Confidentiality Card (Card 2) -->
+          <div class="modern-inquiry-card">
+            <div class="inquiry-header">
+              <div class="header-icon"><i class="pi pi-shield text-maroon"></i></div>
+              <div>
+                <h2>Direct Customer Inquiries</h2>
+              </div>
+            </div>
+
+            <p class="inquiry-lead-text mt-3">
+              We provide residential construction, renovation, interior/exterior work, and project supervision.
+              Our projects are managed with maximum care, structural precision, and transparency.
+            </p>
+
+            <div class="pillars-grid mt-4">
+              <div class="pillar-chip">
+                <i class="pi pi-building text-maroon me-2"></i>
+                <span>Residential Building</span>
+              </div>
+              <div class="pillar-chip">
+                <i class="pi pi-home text-gold me-2"></i>
+                <span>Renovation & Upgrades</span>
+              </div>
+              <div class="pillar-chip">
+                <i class="pi pi-palette text-maroon me-2"></i>
+                <span>Interior & Exterior</span>
+              </div>
+              <div class="pillar-chip">
+                <i class="pi pi-check-square text-ember me-2"></i>
+                <span>Supervision & Care</span>
+              </div>
+            </div>
+
+            <!-- Modern Confidentiality Alert Box -->
+            <div class="confidentiality-box mt-4">
+              <div class="lock-icon-wrap">
+                <i class="pi pi-lock text-gold"></i>
+              </div>
+              <div class="confidentiality-content">
+                <strong>Client Confidentiality Policy</strong>
+                <p>{{ langService.translate('privacyNotice') }}</p>
+              </div>
             </div>
           </div>
         </div>
