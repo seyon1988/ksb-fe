@@ -9,6 +9,7 @@ import { CardModule } from 'primeng/card';
 import { MessageModule } from 'primeng/message';
 import { AuthService } from '../../services/auth.service';
 import { LanguageService } from '../../services/language.service';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-admin-login',
