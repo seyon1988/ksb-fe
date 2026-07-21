@@ -34,13 +34,13 @@ export class ThemeService {
     {
       id: 'theme-2',
       badgeText: 'Theme 2',
-      name: 'Theme 2 (BOC Flex White & Blue)',
+      name: 'Blue Theme',
       maroon: '#0077B6',
       maroonDeep: '#003B73',
       paper: '#F8FAFC',
       ink: '#0F172A',
       gold: '#00A8E8',
-      description: 'BOC Flex Inspired Clean White & Royal Blue Theme (Financial & Premium Services)'
+      description: 'Clean White & Royal Blue Theme (Financial & Premium Services)'
     }
   ];
 
