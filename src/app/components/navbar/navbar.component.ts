@@ -166,14 +166,15 @@ import { AuthService } from '../../services/auth.service';
   `,
   styles: [`
     .navbar-wrapper {
-      background: rgba(251, 245, 232, 0.94);
+      background: var(--paper);
       backdrop-filter: blur(16px) saturate(180%);
-      border-bottom: 1px solid rgba(36, 16, 18, 0.08);
+      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 1000;
       padding: 0.75rem 50px;
-      box-shadow: 0 10px 30px -10px rgba(36, 16, 18, 0.12), 0 4px 12px -2px rgba(36, 16, 18, 0.06);
+      box-shadow: 0 10px 30px -10px var(--paper-line), 0 4px 12px -2px var(--paper-line);
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
     .nav-container {
       width: 100%;
