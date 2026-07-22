@@ -37,7 +37,7 @@ import { LanguageService } from '../../services/language.service';
 
             <!-- Director Executive Passport Profile Section -->
             <div class="director-hero-profile mt-4">
-              <img src="/assets/biranavan_hd_004.jpg" alt="Mr. Selvanathan Biranavan" class="director-passport-photo" />
+              <img src="/assets/biranavan_004.jpg" alt="Mr. Selvanathan Biranavan" class="director-passport-photo" />
               <div class="director-hero-info">
                 <h3 class="director-name-heading">{{ langService.translate('directorName') }}</h3>
                 <p class="director-role-tag"><i class="pi pi-user text-maroon me-1"></i> {{ langService.translate('directorTitle') }}</p>

@@ -52,7 +52,7 @@ export interface ServiceSlide {
 
                 <!-- Card 2: Executive Director Contact Banner -->
                 <div class="slideshow-director-card">
-                  <img src="/assets/biranavan_hd_004.jpg" alt="Mr. Selvanathan Biranavan" class="slideshow-passport-photo" />
+                  <img src="/assets/biranavan_004.jpg" alt="Mr. Selvanathan Biranavan" class="slideshow-passport-photo" />
                   <div class="director-details">
                     <strong class="company-name-tag">KSB Construction &amp; Renovation Services</strong>
                     <p class="director-meta">
